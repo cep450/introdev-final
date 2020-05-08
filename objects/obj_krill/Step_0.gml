@@ -6,7 +6,7 @@ if(swarming) {
 	
 	
 } else {
-	//not swarming
+	//not swarming, will just drift
 	
 	
 	

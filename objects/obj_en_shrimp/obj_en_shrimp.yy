@@ -2,7 +2,7 @@
     "id": "b64f0de8-ec79-46d5-bea7-0bdf4352ab0d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_shrimp",
+    "name": "obj_en_shrimp",
     "eventList": [
         {
             "id": "d44ceacb-675f-4aad-b056-f7f1f687a498",

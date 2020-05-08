@@ -1,2 +1,41 @@
-/// @description Insert description here
-// You can write your code in this editor
+
+/*still happens when no control:
+- gun follows the mouse/stick
+*/
+//update fire angle
+
+
+
+if(hasControl) {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

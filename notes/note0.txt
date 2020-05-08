@@ -1,5 +1,44 @@
 
 
+TODO
+- music
+- sfx
+
+
+what incentive is there to STOP firing?
+	maybe, have delay on firing
+	also, as the game goes on it should turn into like...
+	you're the conductor of the krill mass you've accumulated
+
+
+make it a bullet hell via lots of fish
+
+
+- camera zooms out the bigger your swarm!!!!!!!! sense of progression, they used this
+in agar.io, AND allows for really big swarm sizes
+a smooth or discrete function??
+if discrete- use common sizes-
+Mode Name	Resolution
+90p	    160x90
+180p	320x180
+240p	352x240
+360p	640x360
+720p	1280x720
+1080p	1920x1080
+
+this would make spawning more interesting. i guess would spawn stuff outside the window,
+whatever the window is.
+
+
+give your krill a little bit of a sinusoidal ebb and flow when you're idle
+swimmming/pressing any keys this doesnt do this cause we want to prioritise player control,
+but if you're not pressing any keys- makes it look nice
+YOOOOOOOOOOOOOOOOOOOOOOOOOO
+i could have a global ebb/flow
+where the position on the sine is modulated by x value
+so globally it's like there's actual waves rippling through the game
+(plus some noise- noise applied to the x value perhaps?)
+
 
 
 
@@ -12,3 +51,14 @@ far out bucketlist/if i were to continue this
 - more krill allows you to use other weapons/powers;; 'expend' krill??
 - bigger krill swarms
 
+
+
+firing a gun underwater (it is a glock)
+https://youtu.be/OubvTOHWTms?t=145
+
+nautilus eating krill- animation ref
+https://www.youtube.com/watch?v=vR6G-ANma1w
+
+
+huge krill swarms in 3d
+https://www.youtube.com/watch?v=nLN4x_Z-VBA
