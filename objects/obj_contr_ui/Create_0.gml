@@ -58,12 +58,6 @@ but "a krill with allies"
 */
 
 
-currKrill = 0;
-allKrill = 0;
-maxKrill = 0;
-
-numKills = 0;
-numScore = 0;
 
 strGameName = "KRILL 'EM ALL";
 

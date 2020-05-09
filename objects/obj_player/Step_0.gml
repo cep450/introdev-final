@@ -19,7 +19,14 @@ if(hasControl) {
 	
 	
 	
-	
+	if(global.keyFIRE) {
+		
+		
+		//TODO
+		
+		
+		
+	}
 	
 	
 	

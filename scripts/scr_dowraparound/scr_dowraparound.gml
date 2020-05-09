@@ -1,4 +1,6 @@
 
+print("called do wraparound");
+
 var shift = round(room_width / 2);
 var vsign = 0;
 

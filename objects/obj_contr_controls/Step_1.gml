@@ -1,89 +1,59 @@
-/// @description Insert description here
-// You can write your code in this editor
 
-//this may do 2 keyboard checks for each, but,
-//it's so much easier/more readable to code than the alternative
 
-//controller controls
-if() {
-	global.controlWith = controlstate.controller;	
-	
-	//keyboard/mouse controls
-} else if(mouse_check_button(mb_any) || 
-			keyboard_check(vk_anykey)) {
+if(keyboard_check(vk_anykey) || mouse_check_button(mb_any)) {
 	global.controlWith = controlstate.mouse;
 }
 
-
-//fire
-keyFIRE = mouse_check_button(mb_any) || 
-			keyboard_check(ord("K")) ||
-			keyboard_check(ord("J")) ||
-			keyboard_check(ord("L")) ||
-			keyboard_check(vk_space);
-
-
-
-
-//TODO
-//make it so controller related stuff only runs if there IS a controller
-//need to check for controoler in create event
-//theres controller code online i think. see that
-
-
-
-
-
-
-//fire, mouse/keyboard
-if() {
-	keyFIRE = true;
-	global.controlWith = controlstate.mouse;
-	
-	//fire, controller
-} else if() {
-	keyFIRE = true;
-	global.controlWith = controlstate.controller;
-	
-} else { //not firing
-	keyFIRE = false;
+//FIRE/SELECT
+if(gamepad_button_check(0, gp_face1) ||
+	gamepad_button_check(0, gp_face2) ||
+	gamepad_button_check(0, gp_shoulderl) ||
+	gamepad_button_check(0, gp_shoulderr) ||
+	gamepad_button_check(0, gp_shoulderrb) ||
+	gamepad_button_check(0, gp_shoulderlb))
+	 {
+		//controller, fire, select
+		global.controlWith = controlstate.controller;
+		global.keyFIRE = true;
+		global.keySELECT = true;
+} 
+else if(mouse_check_button(mb_left) ||
+	keyboard_check(vk_space)) {
+		//keyboard, fire, select
+		global.keyFIRE = true;
+		global.keySELECT = true;
 }
-
-
-//select, mouse/keyboard
-if() {
-	keyFIRE = true;
-	global.controlWith = controlstate.mouse;
-	
-	//select, controller
-} else if() {
-	keyFIRE = true;
-	global.controlWith = controlstate.controller;
-	
-} else { //not selecting
-	keyFIRE = false;
+else if(keyboard_check(ord("K")) ||
+	keyboard_check(ord("J")) ||
+	keyboard_check(ord("L")) ||
+	mouse_check_button(mb_right)) {
+		//keyboard, fire
+		global.keyFIRE = true;
+		global.keySELECT = false;
 }
-
-
-//up, keyboard
-if() {
-	global.controlWith = controlstate.mouse;
-	keyUP = true;
-	
-	//up, controller
-} else if() {
-	global.controlWith = controlstate.controller;
-	keyUP = true;
-	
-	//not pressing up
+else if(keyboard_check(vk_enter) ||
+	keyboard_check(vk_space) ||
+	keyboard_check(ord("E")) ||
+	mouse_check_button(mb_left)) {
+		//keyboard, select
+		global.keyFIRE = false;
+		global.keySELECT = true;
 } else {
-	keyUP = false;
+	global.keyFIRE = false;
+	global.keySELECT = false;
 }
 
 
-
-
-
+//BACK
+if(gamepad_button_check(0, gp_face3)) { //TODO add back button
+	
+}
+else if(keyboard_check(vk_escape) ||
+	keyboard_check(vk_backspace)) {
+		global.keyBACK = true;
+} else {
+	global.keyBACK = false;	
+}
 
 
 

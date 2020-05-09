@@ -40,9 +40,20 @@ so globally it's like there's actual waves rippling through the game
 (plus some noise- noise applied to the x value perhaps?)
 
 
+combos?
+combos per enemy type? oo...
+swarm size as a score multipler?
+
+
+corpses flip over and sink to the bottom. they maintain (half?) their x velocity and are
+affected by the sinusoidal ebb/flow.
 
 
 
+
+
+wishlist
+- pressing/releasing the mouse does an actual multi frame bouncy animation between states
 
 
 far out bucketlist/if i were to continue this
@@ -50,6 +61,15 @@ far out bucketlist/if i were to continue this
 - other creatures can eat each other ex. fish and birds will also eat shrimp
 - more krill allows you to use other weapons/powers;; 'expend' krill??
 - bigger krill swarms
+- spacial audio depending on where on screen
+
+splash text
+Not by Vlambeer!
+Started at the bottom of the food chain!
+ATTACK! KILL!
+Short kings!
+Size isn't everything!
+Shrimpin' ain't easy!
 
 
 
