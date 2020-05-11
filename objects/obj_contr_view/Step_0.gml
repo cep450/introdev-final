@@ -11,9 +11,3 @@
 
 
 
-//do screenshake
-
-//TODO
-
-//shake decay
-shakemag = round(shakemag * shakedecay);//TODO scfdhs vlambeer curve

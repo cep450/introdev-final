@@ -56,6 +56,38 @@ else if(keyboard_check(vk_escape) ||
 }
 
 
+//TODO add controller
+//LEFT
+if(keyboard_check(ord("A")) ||
+	keyboard_check(vk_left)) {
+	global.keyLEFT = true;
+} else {
+	global.keyLEFT = false;	
+}
+
+//RIGHT
+if(keyboard_check(ord("D")) ||
+	keyboard_check(vk_right)) {
+	global.keyRIGHT = true;
+} else {
+	global.keyRIGHT = false;	
+}
+
+//UP
+if(keyboard_check(ord("W")) ||
+	keyboard_check(vk_up)) {
+	global.keyUP = true;
+} else {
+	global.keyUP = false;	
+}
+
+//DOWN
+if(keyboard_check(ord("S")) ||
+	keyboard_check(vk_down)) {
+	global.keyDOWN = true;
+} else {
+	global.keyDOWN = false;	
+}
 
 
 

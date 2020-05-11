@@ -1,8 +1,13 @@
 
+
+
+
+
 /*still happens when no control:
 - gun follows the mouse/stick
 */
 //update fire angle
+
 
 
 
@@ -29,6 +34,22 @@ if(hasControl) {
 	}
 	
 	
+	//MAKESHIFT FOR TESTING
+	//TODO
+	if(global.keyLEFT) {
+		x -= 1;	
+	}
+	if(global.keyRIGHT) {
+		x += 1;	
+	}
+	if(global.keyUP) {
+		y -= 1;	
+	} 
+	if(global.keyDOWN) {
+		y += 1;	
+	}
+	
+	
 	
 	
 }
@@ -44,5 +65,6 @@ if(hasControl) {
 
 
 
-
+global.playerx = x;
+global.playery = y;
 

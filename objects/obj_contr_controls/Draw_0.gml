@@ -16,6 +16,3 @@ if(global.controlWith == controlstate.mouse) {
 
 
 
-
-
-

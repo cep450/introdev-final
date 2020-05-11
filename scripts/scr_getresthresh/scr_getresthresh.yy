@@ -1,8 +1,8 @@
 {
-    "id": "caebf5d4-924a-4fd7-a695-abb49ced4043",
+    "id": "6a24dbb7-b35d-49d2-81cf-109f4e0a625c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_dowraparound",
+    "name": "scr_getresthresh",
     "IsCompatibility": false,
     "IsDnD": false
 }
