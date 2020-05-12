@@ -28,6 +28,7 @@ vel_vec = 5;
 x_pos_frac = x;
 y_pos_frac = y;
 
+live = true;
 
 image_speed = 0;
 

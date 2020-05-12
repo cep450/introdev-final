@@ -38,9 +38,11 @@ if(hasControl) {
 	//TODO
 	if(global.keyLEFT) {
 		x -= 1;	
+		image_xscale = 1;
 	}
 	if(global.keyRIGHT) {
 		x += 1;	
+		image_xscale = -1;
 	}
 	if(global.keyUP) {
 		y -= 1;	

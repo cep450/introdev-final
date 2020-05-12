@@ -3,7 +3,7 @@
 
 hasControl = true; //TODO
 
-fireAngle = 0;
+aimAngle = 0;
 
 
 

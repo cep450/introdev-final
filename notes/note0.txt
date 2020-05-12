@@ -70,6 +70,9 @@ ATTACK! KILL!
 Short kings!
 Size isn't everything!
 Shrimpin' ain't easy!
+Gratious Violence!
+Unlimited violence!
+
 
 
 
@@ -82,3 +85,30 @@ https://www.youtube.com/watch?v=vR6G-ANma1w
 
 huge krill swarms in 3d
 https://www.youtube.com/watch?v=nLN4x_Z-VBA
+
+
+
+https://en.wikipedia.org/wiki/Krill#Swarming
+https://en.wikipedia.org/wiki/Swarm_intelligence#Algorithms
+https://www.researchgate.net/publication/236030354_Krill_Herd_Algorithm_A_New_Bio-Inspired_Optimization_Algorithm
+https://www.youtube.com/watch?v=cbxSBDopVyw
+
+
+
+Save hi scores to a local document
+
+text/score/stat displays do a lil bounce when they’re increased or changed
+
+Other enemies- seals, penguins
+
+Test out- fixed screen or moving window
+Test out- player ownership transfers to other shrimp vs your unkillable shrimp until theyre all dead
+
+
+Usually these kind of effect is achieved by a few 'hair' objects that follow each other, while the first is anchored to the head, and are affected by gravity independently. You will find some discussions around if you search for Celeste's hair trick.
+https://www.yoyogames.com/blog/43/using-skeletal-animation-with-spine
+https://www.khronos.org/opengl/wiki/Skeletal_Animation
+
+Shrimp swim ref
+https://www.youtube.com/watch?v=TXXsUL3qlq8
+

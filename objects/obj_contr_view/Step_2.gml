@@ -9,10 +9,6 @@ var rightboundpos = viewcenterx + (camera_get_view_width(view_camera[0]) * playe
 var upboundpos = viewcentery - (camera_get_view_height(view_camera[0]) * playerythresh);
 var downboundpos = viewcentery + (camera_get_view_height(view_camera[0]) * playerythresh);
 
-print(global.PLAYER.x);
-print(obj_player.x);
-print(global.playerx);
-
 var targetcenterx = viewcenterx;
 var targetcentery = viewcentery;
 if(global.PLAYER.x < leftboundpos) {
@@ -120,8 +116,6 @@ shakemag = round(shakemag * shakedecay);//TODO scfdhs vlambeer curve
 
 
 
-print("x corner:", viewxcorner);
-print("y corner:", viewycorner);
 //FINALLY... ACTUALLY SET THE VIEW
 camera_set_view_pos(view_camera[0], viewxcorner, viewycorner);
 

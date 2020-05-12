@@ -55,10 +55,26 @@
             }
         },
         {
+            "Key": "14bd5944-aebf-4f5d-bf05-184eb8b3f0ef",
+            "Value": {
+                "id": "04233989-84e0-4bff-8162-6d4465f29f51",
+                "resourcePath": "objects\\obj_menubutton_back\\obj_menubutton_back.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1abcda78-794d-4762-8156-d480c9798274",
             "Value": {
                 "id": "b9553987-4419-4f2a-80e3-e93528404622",
                 "resourcePath": "objects\\obj_title\\obj_title.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1c5653bf-4f26-4b7d-b93f-f258c6287ac3",
+            "Value": {
+                "id": "9bb48c09-fe6e-4535-b4c4-aefc28aa3045",
+                "resourcePath": "objects\\obj_menubutton_controls\\obj_menubutton_controls.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -114,7 +130,7 @@
             "Key": "44369e91-caaf-4a1e-b775-5a13faa96640",
             "Value": {
                 "id": "b0603ef2-fa95-488d-bf58-ea0f039fe821",
-                "resourcePath": "objects\\obj_menubutton\\obj_menubutton.yy",
+                "resourcePath": "objects\\obj_par_menubutton\\obj_par_menubutton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -148,6 +164,22 @@
                 "id": "c070b277-25eb-41f7-9bf7-6a0ca45857a3",
                 "resourcePath": "notes\\note0.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "5f2c460f-1f14-498d-85fe-19cfa47e785b",
+            "Value": {
+                "id": "8db8d3ff-4cc4-403d-8887-a4f927b36809",
+                "resourcePath": "objects\\obj_en_armedboat\\obj_en_armedboat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "62cb1a3a-5460-4c8e-b9e6-36307bc4a731",
+            "Value": {
+                "id": "bdbee71e-b027-47ae-9e0e-26ac343b6aff",
+                "resourcePath": "objects\\obj_en_fishingboat\\obj_en_fishingboat.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -247,6 +279,14 @@
             }
         },
         {
+            "Key": "89ca912b-5e4a-4c25-8bf8-5bc0a82ea81e",
+            "Value": {
+                "id": "7f3e3cfb-41d0-4fb0-bff2-dad831a2f595",
+                "resourcePath": "objects\\obj_menubutton_start\\obj_menubutton_start.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8d4b8268-1989-48a5-b274-7a9dc016c6fb",
             "Value": {
                 "id": "05196f64-03cc-4721-bda9-d75155133f4a",
@@ -276,6 +316,14 @@
                 "id": "28177f50-1560-4c82-80dd-8bb4cb751d1e",
                 "resourcePath": "options\\tvos\\options_tvos.yy",
                 "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
+            "Key": "96642c13-8ccc-4df5-b313-b56abb32efcd",
+            "Value": {
+                "id": "a18315ad-bbbe-4a0a-8f3d-cea5d14d25fc",
+                "resourcePath": "fonts\\fnt_button\\fnt_button.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -423,6 +471,14 @@
             }
         },
         {
+            "Key": "d2120f65-1e19-471d-94f0-af4aa9638ea6",
+            "Value": {
+                "id": "2be0d695-91b6-460a-bf7f-259ddb7c84fb",
+                "resourcePath": "fonts\\fnt_title\\fnt_title.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "dc0de0ea-c0d8-4c3c-a241-dba877c3d1b1",
             "Value": {
                 "id": "639ede68-306c-4fe6-8f15-df34b6d525f2",
@@ -515,6 +571,14 @@
             "Value": {
                 "id": "1f33dac5-0560-4143-8328-41118b585481",
                 "resourcePath": "objects\\obj_gamestate\\obj_gamestate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fcdf3d89-dcc7-4acf-9b8c-e5f9d6d2c5da",
+            "Value": {
+                "id": "bcbc6cf5-630b-4e9b-afd2-f43e0f18573c",
+                "resourcePath": "objects\\obj_menubutton_retry\\obj_menubutton_retry.yy",
                 "resourceType": "GMObject"
             }
         }
