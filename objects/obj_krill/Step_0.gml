@@ -2,6 +2,19 @@
 
 if(swarming) {
 	
+	//move
+	
+	
+	
+	
+	
+	//fire?
+	
+	
+	//
+	
+	
+	
 	
 	
 	

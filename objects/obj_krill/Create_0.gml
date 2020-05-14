@@ -1,6 +1,7 @@
 
 swarming = false;
 
+target = noone;
 
 
 
