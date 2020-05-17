@@ -9,6 +9,12 @@
 //update fire angle
 
 
+if(global.controlWith == controlstate.mouse) {
+	aimAngle = point_direction(x, y, mouse_x, mouse_y);
+}
+
+
+
 
 
 if(hasControl) {
@@ -19,17 +25,21 @@ if(hasControl) {
 	
 	
 	
-	
-	
-	
-	
-	
 	if(global.keyFIRE) {
 		
+		if(fireTimer <= 0) {
+			//go ahead and fire
+			
+			scr_create_bullet(x, y, -aimAngle, spr_bullet_player, bulletSpawnDist);
+			
+			fireTimer = fireDelay;
+		} else {
+			//can't fire, still waiting on timer
+			fireTimer--;	
+		}
 		
-		//TODO
 		
-		
+
 		
 	}
 	

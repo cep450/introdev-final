@@ -8,7 +8,7 @@ viewcenterx = camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_ca
 viewcentery = camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_camera[0]) / 2);
 
 //how fast we're moving the camera
-transitionSpeed = 0.85;
+transitionSpeed = 0.90;
 
 //threshold for shifting the screen based on player position... imagine the player is
 //bounded by a box, and moves the box by pushing against the edges

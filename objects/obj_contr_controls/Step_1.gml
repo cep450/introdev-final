@@ -1,5 +1,14 @@
 
 
+
+
+
+
+//NEVERMIND IM NOT TRYING TO DO CONTROLLER TOO THERE'S NOT ENOUGH TIME
+//the code is there to do that in the future tho
+
+
+
 if(keyboard_check(vk_anykey) || mouse_check_button(mb_any)) {
 	global.controlWith = controlstate.mouse;
 }
@@ -13,7 +22,7 @@ if(gamepad_button_check(0, gp_face1) ||
 	gamepad_button_check(0, gp_shoulderlb))
 	 {
 		//controller, fire, select
-		global.controlWith = controlstate.controller;
+		//global.controlWith = controlstate.controller;
 		global.keyFIRE = true;
 		global.keySELECT = true;
 } 

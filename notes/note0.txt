@@ -4,6 +4,9 @@ TODO
 - music
 - sfx
 
+hi pass filter on shrimp music for title
+lo pass filter for game
+
 
 what incentive is there to STOP firing?
 	maybe, have delay on firing
@@ -70,7 +73,6 @@ ATTACK! KILL!
 Short kings!
 Size isn't everything!
 Shrimpin' ain't easy!
-Gratious Violence!
 Unlimited violence!
 
 
