@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "81967797-b68f-4f27-b910-77eb13aeedc4",
+            "Value": {
+                "id": "d96c793e-c1fd-4674-9680-a8391875b95c",
+                "resourcePath": "objects\\obj_par_kril\\obj_par_kril.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "82637115-cf93-459c-97f8-4b9631252ac1",
             "Value": {
                 "id": "cdd2e73c-8a67-4182-9468-fb5a97700e4c",
