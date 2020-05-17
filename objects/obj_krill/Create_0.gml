@@ -2,8 +2,6 @@
 swarming = false;
 pickupDistance = 20; //get close to add to swarm
 
-
-
 target = noone;
 
 fireDelay = 15;
@@ -21,6 +19,12 @@ krillCheckRadius = 10; //to factor in density
 //or maybe more dense = packs closer? test both
 //so it'll add max radius - the distance
 
+
+accel = 0.3;
+decel = 0.3;
+
+vel_vec_frac = 0;
+vel_vec_cap = 5;
 
 
 

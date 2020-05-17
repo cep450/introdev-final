@@ -6,7 +6,7 @@ if(swarming) {
 	//try to go towards the player
 	//don't if there's shrimp in the way, though
 	
-	var angle = point_direction(x, y, global.PLAYER.x, global.PLAYER.y);
+	var angle = degtorad(point_direction(x, y, global.PLAYER.x, global.PLAYER.y));
 	
 	
 	
