@@ -9,33 +9,26 @@ fireDelay = 10;
 fireTimer = 0;
 bulletSpawnDist = 12;
 
+doCollis = false; //TODO
 
-accelMag = 0.3;
-decelMag = 0.3;
+//acceleration/decelleration magnitudes
+mag_accel = 0.17;
+//used for the diagonal keyboard/mouse controls movement, for easy use
+//mag_accel_diag = sin(45) * mag_accel;
+mag_decel = 0.1; //like a friction value
+//max velocity
+mag_vel_cap = 2;
 
-vel_vec_frac = 0;
-vel_vec_cap = 5;
 
-moveAngle = 0;
+//applied to velocity during step
+x_accel = 0;
+y_accel = 0;
 
-////////ffffffffffffffuuuuuccckkkkk so like vector vs x/y
-
-x_accel = 0.3;
-x_decel = 0.1;
-
-//fractional x/y velocities
+//fractional x/y velocities during step
 x_vel_frac = 0;
 y_vel_frac = 0;
 
-x_vel_cap = 4;
-
-//integer x/y velocities, since we want our positioning to be whole numbers
-x_move = 0;
-y_move = 0;
 
 
-
-
-
-
+DEBUG_TIMER = 0; //DEBUG
 

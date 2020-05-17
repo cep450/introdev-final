@@ -1,4 +1,8 @@
 
+//upper and lower bounds of the map
+mapTopBound = 220;
+mapBottomBound = 810;
+
 //number of krill in swarm
 numKrill = 1;
 //number of krill collected all time for the course of the game

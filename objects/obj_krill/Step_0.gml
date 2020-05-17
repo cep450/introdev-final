@@ -11,7 +11,6 @@ if(swarming) {
 	
 	
 	
-	
 	//fire?
 	//if there's an enemy close, fire
 	//if the player is firing in a direction, fire after a delay
@@ -24,12 +23,17 @@ if(swarming) {
 	
 	
 	
+	
+	
 } else {
 	//not swarming, will just drift
 	
 	//check if picked up by player
 	if(distance_to_object(global.PLAYER) < pickupDistance) {
 		swarming = true;
+		//count this krill
+		obj_contr_game.numKrill++;
+		obj_contr_game.allKrill++;
 	}
 	
 }

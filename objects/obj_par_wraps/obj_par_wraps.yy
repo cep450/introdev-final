@@ -2,7 +2,7 @@
     "id": "81967797-b68f-4f27-b910-77eb13aeedc4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_par_kril",
+    "name": "obj_par_wraps",
     "eventList": [
         
     ],

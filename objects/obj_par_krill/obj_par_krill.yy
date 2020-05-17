@@ -1,14 +1,14 @@
 {
-    "id": "8e12e66a-69bf-400b-8e64-1728ea7cad65",
+    "id": "e0a72dc6-1493-46b8-90b1-20cc3d65e016",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_en_fish",
+    "name": "obj_par_krill",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "81967797-b68f-4f27-b910-77eb13aeedc4",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "82740c6d-8668-4cc4-abea-c85b28efafdf",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

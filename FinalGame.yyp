@@ -183,14 +183,6 @@
             }
         },
         {
-            "Key": "6a24dbb7-b35d-49d2-81cf-109f4e0a625c",
-            "Value": {
-                "id": "7c04ce5d-a47c-44d1-a016-1fc9aa2efa6f",
-                "resourcePath": "scripts\\scr_getresthresh\\scr_getresthresh.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6cdb7fa9-68b2-4f92-8757-a6fca84dfc38",
             "Value": {
                 "id": "f2385330-5dac-4347-954c-d2ffacf19d47",
@@ -250,7 +242,7 @@
             "Key": "81967797-b68f-4f27-b910-77eb13aeedc4",
             "Value": {
                 "id": "d96c793e-c1fd-4674-9680-a8391875b95c",
-                "resourcePath": "objects\\obj_par_kril\\obj_par_kril.yy",
+                "resourcePath": "objects\\obj_par_wraps\\obj_par_wraps.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -503,6 +495,14 @@
             }
         },
         {
+            "Key": "e0a72dc6-1493-46b8-90b1-20cc3d65e016",
+            "Value": {
+                "id": "b3939e8a-a1f7-41df-9f06-9931b4702f17",
+                "resourcePath": "objects\\obj_par_krill\\obj_par_krill.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e2fcc826-6257-4cd4-939a-1b6a01f74e01",
             "Value": {
                 "id": "3d2d4235-b9e4-43d0-922c-d51c53c95342",
@@ -601,7 +601,6 @@
     ],
     "script_order": [
         "a34e02c5-3466-4d46-ae5b-899e766ef72b",
-        "6a24dbb7-b35d-49d2-81cf-109f4e0a625c",
         "71b33fd5-7eaa-4e14-9146-1d17ab796de6"
     ],
     "tutorial": ""

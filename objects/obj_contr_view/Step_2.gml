@@ -37,12 +37,12 @@ viewcentery = (targetcentery * (1 - transitionSpeed)) + (viewcentery * transitio
 
 //RESIZE?
 
-if(obj_contr_game.numKrill > scr_getresthresh(targetreslevel)) {
-	//if we need to size up...
+if(targetreslevel < maxreslevel && obj_contr_game.numKrill > power(krillThreshPower, targetreslevel + 1)) {
+	//if we need to size up... (won't if it'd go over max level)
 	targetreslevel++;
 	targetresx = baseresx * power(2, targetreslevel);
 	targetresy = baseresy * power(2, targetreslevel);
-} else if(obj_contr_game.numKrill < scr_getresthresh(targetreslevel - 1)) {
+} else if(obj_contr_game.numKrill < power(krillThreshPower, targetreslevel)) {
 	//if we need to size down...
 	targetreslevel--;
 	targetresx = baseresx * power(2, targetreslevel);
@@ -50,14 +50,22 @@ if(obj_contr_game.numKrill > scr_getresthresh(targetreslevel)) {
 }
 
 //do we need to resize the window to get to the target?
-if(camera_get_view_width(view_camera[0]) > targetresx) {
-	//we need to make it smaller...
+if(camera_get_view_width(view_camera[0]) != targetresx) {
 	
-	
-} else if(camera_get_view_width(view_camera[0]) < targetresx) {
-	//we need to make it bigger...
-	
+	//difference between what we have and what we want
+	var xResDifference = targetresx - camera_get_view_width(view_camera[0]);
+	if(abs(xResDifference) > resizeSnapThresh) {
+		var yResDifference = targetresy - camera_get_view_height(view_camera[0]);
+		var newWidth = targetresx + (xResDifference * resizePercent);
+		var newHeight = targetresy + (yResDifference * resizePercent);
+		camera_set_view_size(view_camera[0], newWidth, newHeight);
+	} else {
+		//close enough, snap already
+		camera_set_view_size(view_camera[0], targetresx, targetresy);
+	}
 }
+
+
 
 
 
@@ -83,15 +91,9 @@ if(wrapsign != 0) {
 	//find distance to move
 	var move = round((room_width / 2) - (camera_get_view_width(view_camera[0]) / 2)) * wrapsign;
 	
-	//move player, krill and enemy instances
-	with(obj_player) {
+	//move player, krill, enemy, bullet, ect instances
+	with(obj_par_wraps) {
 		x += move;	
-	}
-	with(obj_krill) {
-		x += move;	
-	}
-	with(obj_par_enemy) {
-		x += move;
 	}
 	
 	//and move the camera to match
