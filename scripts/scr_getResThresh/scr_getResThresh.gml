@@ -9,7 +9,7 @@ var reslevel = argument0;
 switch(reslevel) {
 	case 0: return 1; //default
 	case 1: return 3;
-	case 2: return 11;
+	case 2: return 10;
 	case 3: return 25;
 	case 4: return 50;
 	case 5: return 100;

@@ -22,13 +22,8 @@ numEn = 4;
 //starting from 1 for convenience
 killsEn[1] = 0;
 killsEn[2] = 0;
-killsEn[3] = 0;
-killsEn[4] = 0;
 
 
-currKrill = 0;
-allKrill = 0;
-maxKrill = 0;
 
 numKills = 0;
 numScore = 0;
@@ -39,20 +34,14 @@ numScore = 0;
 //# enemies on screen of that type
 enOnscreen[1] = 0;
 enOnscreen[2] = 0;
-enOnscreen[3] = 0;
-enOnscreen[4] = 0;
 
 //points for each enemy type, also helps w/ difficulty/spawning
 enPoints[1] = 0;
 enPoints[2] = 0;
-enPoints[3] = 0;
-enPoints[4] = 0;
 
 //hp for each enemy type
 enHp[1] = 0;
 enHp[2] = 0;
-enHp[3] = 0;
-enHp[4] = 0;
 
 
 
