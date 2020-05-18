@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0e232877-cad6-43ce-9e35-0f154ea4a0f6",
+            "Value": {
+                "id": "3b754ca4-7e81-4994-a88e-2eae1ba1d6ce",
+                "resourcePath": "scripts\\scr_getVelSmoothY\\scr_getVelSmoothY.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1056a3ca-e6ce-468c-a1d8-028e3e642cd1",
             "Value": {
                 "id": "a7c89945-f614-4b29-9b01-b8f38941b3c1",
@@ -292,6 +300,14 @@
                 "id": "7f3e3cfb-41d0-4fb0-bff2-dad831a2f595",
                 "resourcePath": "objects\\obj_menubutton_start\\obj_menubutton_start.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8c360d1c-affd-479c-8584-2997ea536211",
+            "Value": {
+                "id": "2259c886-b53e-45aa-80a2-d16ace0f82ea",
+                "resourcePath": "scripts\\scr_getResThresh\\scr_getResThresh.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -543,6 +559,14 @@
             }
         },
         {
+            "Key": "ee9360d4-db82-4376-ad21-5c9bbdfc1174",
+            "Value": {
+                "id": "1e3fb927-096c-45ae-8ecb-884717873997",
+                "resourcePath": "scripts\\scr_getVelSmoothX\\scr_getVelSmoothX.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1786b90-3a67-4a36-a511-3e8e237a7269",
             "Value": {
                 "id": "12336a7c-e440-4659-ad92-c09472e684a7",
@@ -601,7 +625,10 @@
     ],
     "script_order": [
         "a34e02c5-3466-4d46-ae5b-899e766ef72b",
-        "71b33fd5-7eaa-4e14-9146-1d17ab796de6"
+        "71b33fd5-7eaa-4e14-9146-1d17ab796de6",
+        "ee9360d4-db82-4376-ad21-5c9bbdfc1174",
+        "0e232877-cad6-43ce-9e35-0f154ea4a0f6",
+        "8c360d1c-affd-479c-8584-2997ea536211"
     ],
     "tutorial": ""
 }

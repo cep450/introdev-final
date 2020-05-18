@@ -1,7 +1,7 @@
 
 //upper and lower bounds of the map
-mapTopBound = 220;
-mapBottomBound = 810;
+mapTopBound = 210;
+mapBottomBound = 780;
 
 //number of krill in swarm
 numKrill = 1;

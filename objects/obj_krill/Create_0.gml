@@ -10,8 +10,13 @@ fireGroupCooldown = 100;
 fireGroupNum = 3;
 fireGroupCounter = 0;
 
-krillAwayDistance = 5; //krill won't get too close to each other
-krillCheckRadius = 10; //to factor in density
+krillAwayDistance = 4; //krill won't get too close to each other
+//krillCheckRadius = 10; //to factor in density
+krillStuckTimer = 0;
+krillStuckThresh = 10;
+unstuckDistX = 8;
+unstuckDistY = 4;
+
 
 //so like.... each shrimp within a distance adds to a density value,
 //and adds more if it's closer
@@ -20,11 +25,13 @@ krillCheckRadius = 10; //to factor in density
 //so it'll add max radius - the distance
 
 
-accel = 0.3;
-decel = 0.3;
+mag_accel = 0.2;
+mag_decel = 0.1;
 
-vel_vec_frac = 0;
-vel_vec_cap = 5;
+mag_vel_cap = 2.2;
+
+x_vel_frac = 0;
+y_vel_frac = 0;
 
 
 

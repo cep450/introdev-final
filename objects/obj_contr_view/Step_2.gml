@@ -34,15 +34,14 @@ viewcentery = (targetcentery * (1 - transitionSpeed)) + (viewcentery * transitio
 
 
 
-
 //RESIZE?
 
-if(targetreslevel < maxreslevel && obj_contr_game.numKrill > power(krillThreshPower, targetreslevel + 1)) {
+if(targetreslevel < maxreslevel && obj_contr_game.numKrill > scr_getResThresh(targetreslevel + 1)) {
 	//if we need to size up... (won't if it'd go over max level)
 	targetreslevel++;
 	targetresx = baseresx * power(2, targetreslevel);
 	targetresy = baseresy * power(2, targetreslevel);
-} else if(obj_contr_game.numKrill < power(krillThreshPower, targetreslevel)) {
+} else if(obj_contr_game.numKrill < scr_getResThresh(targetreslevel)) {
 	//if we need to size down...
 	targetreslevel--;
 	targetresx = baseresx * power(2, targetreslevel);
@@ -68,9 +67,9 @@ if(camera_get_view_width(view_camera[0]) != targetresx) {
 
 
 
-
+//set the pos
 var viewxcorner = viewcenterx - (camera_get_view_width(view_camera[0]) / 2);
-var viewycorner = viewcentery - (camera_get_view_height(view_camera[0]) / 2)
+var viewycorner = viewcentery - (camera_get_view_height(view_camera[0]) / 2);
 
 
 //WRAPAROUND?
@@ -101,6 +100,10 @@ if(wrapsign != 0) {
 	
 }
 
+
+//cap at the top and bottom
+viewycorner = max(viewycorner, viewCapThresh);
+viewycorner = min(viewycorner, room_height - viewCapThresh - camera_get_view_height(view_camera[0]));
 
 
 
