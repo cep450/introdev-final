@@ -37,18 +37,20 @@ if(live) {
 		audio_play_sound(snd_bullet_hit, 10, false);
 	
 		//screenshake
-		obj_contr_view.shakemag += shakeHit;
+		//obj_contr_view.shakemag += shakeHit;
 	
 		with(enem) {
-			hp -= dmg;
+			hp -= other.dmg;
 			if(hp <= 0) {
 				//if it killed it
 				//shake some more
-				obj_contr_view.shakemag += shakeKill;
+				//obj_contr_view.shakemag += shakeKill;
 				//add a kill to total kills...
 				obj_contr_game.numKills += 1;
 				obj_contr_game.killsEn[index] += 1;
+				obj_contr_game.enOnscreen[index] -= 1;
 				obj_contr_game.gscore += points;
+				
 				instance_destroy(self);
 			}
 		

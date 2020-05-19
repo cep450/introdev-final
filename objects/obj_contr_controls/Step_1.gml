@@ -8,10 +8,35 @@
 //the code is there to do that in the future tho
 
 
-
 if(keyboard_check(vk_anykey) || mouse_check_button(mb_any)) {
 	global.controlWith = controlstate.mouse;
 }
+
+//select we only want once.
+//SELECT
+if(gamepad_button_check_pressed(0, gp_face1) ||
+	gamepad_button_check_pressed(0, gp_face2) ||
+	gamepad_button_check_pressed(0, gp_shoulderl) ||
+	gamepad_button_check_pressed(0, gp_shoulderr) ||
+	gamepad_button_check_pressed(0, gp_shoulderrb) ||
+	gamepad_button_check_pressed(0, gp_shoulderlb))
+	 {
+		//controller, select
+		//global.controlWith = controlstate.controller;
+		global.keySELECT = true;
+} 
+else if(mouse_check_button_pressed(mb_left) ||
+	keyboard_check_pressed(vk_space) ||
+	keyboard_check_pressed(vk_enter) ||
+	keyboard_check_pressed(vk_space) ||
+	keyboard_check_pressed(ord("E")) ||
+	mouse_check_button_pressed(mb_left)) {
+		//keyboard, select
+		global.keySELECT = true;
+} else {
+	global.keySELECT = false;
+}
+
 
 //FIRE/SELECT
 if(gamepad_button_check(0, gp_face1) ||
@@ -21,35 +46,20 @@ if(gamepad_button_check(0, gp_face1) ||
 	gamepad_button_check(0, gp_shoulderrb) ||
 	gamepad_button_check(0, gp_shoulderlb))
 	 {
-		//controller, fire, select
+		//controller, fire
 		//global.controlWith = controlstate.controller;
 		global.keyFIRE = true;
-		global.keySELECT = true;
 } 
 else if(mouse_check_button(mb_left) ||
-	keyboard_check(vk_space)) {
-		//keyboard, fire, select
-		global.keyFIRE = true;
-		global.keySELECT = true;
-}
-else if(keyboard_check(ord("K")) ||
+	keyboard_check(vk_space) ||
+	keyboard_check(ord("K")) ||
 	keyboard_check(ord("J")) ||
 	keyboard_check(ord("L")) ||
 	mouse_check_button(mb_right)) {
 		//keyboard, fire
 		global.keyFIRE = true;
-		global.keySELECT = false;
-}
-else if(keyboard_check(vk_enter) ||
-	keyboard_check(vk_space) ||
-	keyboard_check(ord("E")) ||
-	mouse_check_button(mb_left)) {
-		//keyboard, select
-		global.keyFIRE = false;
-		global.keySELECT = true;
 } else {
 	global.keyFIRE = false;
-	global.keySELECT = false;
 }
 
 

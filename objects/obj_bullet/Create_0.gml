@@ -23,4 +23,4 @@ live = true;
 image_speed = 0;
 
 
-
+audio_play_sound(snd_bullet_fire, 10, false);

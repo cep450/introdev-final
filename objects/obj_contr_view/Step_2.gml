@@ -41,7 +41,7 @@ if(targetreslevel < maxreslevel && obj_contr_game.numKrill > scr_getResThresh(ta
 	targetreslevel++;
 	targetresx = baseresx * power(2, targetreslevel);
 	targetresy = baseresy * power(2, targetreslevel);
-} else if(obj_contr_game.numKrill < scr_getResThresh(targetreslevel)) {
+} else if(targetreslevel > 0 && obj_contr_game.numKrill < scr_getResThresh(targetreslevel)) {
 	//if we need to size down...
 	targetreslevel--;
 	targetresx = baseresx * power(2, targetreslevel);

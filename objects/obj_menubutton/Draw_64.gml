@@ -5,6 +5,18 @@
 
 if(draw) {
 	
+	draw_set_font(font);
+	
+	if(!gotHomeX) {
+		//TODO ???????????????? why is string_width such a small magnitude???
+		homexpos = (display_get_gui_width() / 2) - (string_width(text) * 2.5);
+		print(homexpos);
+		xpos = homexpos;
+		gotHomeX = true;
+	}
+	
+	
+	
 	if(animatetimer > animatethresh) {
 		animatetimer = animatethresh;
 		animateincrement = -animateincrement;

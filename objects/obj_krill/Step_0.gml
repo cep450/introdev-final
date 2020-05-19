@@ -84,13 +84,29 @@ if(swarming) {
 	
 	
 	
-	
-	
-	
-	
+
 	
 } else {
 	//not swarming, will just drift
+	
+	if(driftTimer > driftTimerThresh) {
+		driftTimer = 0;
+		//driftAngle = random(2 * pi);
+		driftAngle += random_range(-driftAngleWiggle, driftAngleWiggle);
+		
+	} else {
+		driftTimer++;	
+		
+		x += cos(driftAngle) * driftVel;
+		y += -sin(driftAngle) * driftVel;
+		
+		/*
+		x_vel_frac = scr_getVelSmoothX(x_vel_frac, driftAngle, driftAccelMag, driftDecelMag, driftVelCap);
+		y_vel_frac = scr_getVelSmoothY(y_vel_frac, driftAngle, driftAccelMag, driftDecelMag, driftVelCap);
+		x += round(x_vel_frac);
+		y += round(y_vel_frac);
+		*/
+	}
 	
 	//check if picked up by player
 	if(distance_to_object(global.PLAYER) < pickupDistance) {
@@ -98,6 +114,7 @@ if(swarming) {
 		//count this krill
 		obj_contr_game.numKrill++;
 		obj_contr_game.allKrill++;
+		audio_play_sound(snd_krill_add, 10, false);
 	}
 	
 }

@@ -13,11 +13,11 @@ enum gamestate {
 currentState = gamestate.title;
 sendToState = gamestate.title;
 
+global.music = audio_play_sound(snd_music_hipass, 3, true);
+audio_sound_set_track_position(global.music, 100);
 
-view_width = camera_get_view_width(view_camera[0]);
-buttonLeftX = -100;
-buttonRightX = view_width + 20;
-transitionSpeed = 0.5;
+buttonYBase = 300;
+buttonYMargin = 100;
 
 buttonStart = instance_create_layer(x, y, "Instances", obj_menubutton);
 buttonControls = instance_create_layer(x, y, "Instances", obj_menubutton);
@@ -30,42 +30,33 @@ with(buttonStart) {
 	sendTo = gamestate.game;
 	selected = true;
 	down = obj_gamestate.buttonControls;
-	xpos = obj_gamestate.buttonHomeX;
-	ypos = 200;
+	ypos = obj_gamestate.buttonYBase;
 	draw = true;
 }
 with(buttonControls) {
 	text = "HOW TO KRILL";
 	sendTo = gamestate.controls;
 	up = obj_gamestate.buttonStart;
-	xpos = obj_gamestate.buttonHomeX;
-	ypos = 250;
+	ypos = obj_gamestate.buttonYBase + string_height(text) + obj_gamestate.buttonYMargin;
 	draw = true;
 }
 with(buttonControlsBack) {
 	text = "BACK";
 	sendTo = gamestate.title;
 	selected = true;
-	xpos = obj_gamestate.buttonRightX;
-	ypos = 220;
-	draw = false;
-	draw = true;
+	ypos = obj_gamestate.buttonYBase + string_height(text) + 2 * obj_gamestate.buttonYMargin;
 }
 with(buttonRetry) {
 	text = "KRILL AGAIN?";
 	sendTo = gamestate.game;
 	selected = true;
 	down = obj_gamestate.buttonRetryBack;
-	xpos = obj_gamestate.buttonHomeX;
-	ypos = 200;
-	draw = false;
+	ypos = obj_gamestate.buttonYBase * 1.6;
 }
 with(buttonRetryBack) {
-	text = "BACK";
+	text = "BACK TO TITLE";
 	sendTo = gamestate.title;
 	up = obj_gamestate.buttonRetry;
-	xpos = obj_gamestate.buttonHomeX;
-	ypos = 250;
-	draw = false;
+	ypos = obj_gamestate.buttonYBase * 1.6 + string_height(text) + obj_gamestate.buttonYMargin;
 }
 

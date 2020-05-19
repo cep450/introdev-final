@@ -1,7 +1,8 @@
 
 
 
-hasControl = true; //TODO
+hasControl = false;
+alive = true;
 
 aimAngle = 0;
 
@@ -27,8 +28,4 @@ y_accel = 0;
 //fractional x/y velocities during step
 x_vel_frac = 0;
 y_vel_frac = 0;
-
-
-
-DEBUG_TIMER = 0; //DEBUG
 

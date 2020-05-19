@@ -34,6 +34,19 @@ x_vel_frac = 0;
 y_vel_frac = 0;
 
 
+driftTimer = 100;
+driftTimerThresh = 100;
+/*
+driftVelCap = 0.6;
+driftAccelMag = 0.2;
+driftDecelMag = 0.1;
+driftAngle = 0;
+*/
+driftVel = 0.2;
+//driftAngle = degtorad(point_direction(x, y, global.PLAYER.x, global.PLAYER.y));
+driftAngle = random(pi * 2);
+driftAngleWiggle = 0.5;
+
 
 //init a krill
 

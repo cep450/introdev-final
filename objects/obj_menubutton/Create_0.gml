@@ -10,16 +10,17 @@ down = noone;
 up = noone;
 
 
-
-draw = true;
+draw = false;
 
 colorfront = c_aqua;
 colorback = c_orange;
-font = fnt_button;
+font = fnt_title;
 scale = 5;
 scalewiggle = 0.2;
 angle = 2;
 
+gotHomeX = false;
+homexpos = 0;
 xpos = 0;
 ypos = 0;
 

@@ -16,15 +16,11 @@ if(global.controlWith == controlstate.mouse) {
 
 
 
-
 if(hasControl) {
 	
 	
 	
-	
-	
-	
-	
+
 	if(global.keyFIRE) {
 		
 		if(fireTimer <= 0) {
@@ -114,13 +110,7 @@ if(hasControl) {
 }
 
 
-//DEBUG
-if(DEBUG_TIMER > 120) {
-	DEBUG_TIMER = 0;
-	instance_create_layer(x + 50, y + 50, "Instances_1", obj_krill);
-} else {
-	DEBUG_TIMER++;	
-}
+
 
 
 
