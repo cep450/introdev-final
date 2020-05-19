@@ -1,11 +1,4 @@
 
-/*
-if(animatetimer < animatethresh) {
-	animatetimer += animateincrement;
-} else {
-	//
-}
-*/
 
 if(animatetimer > animatethresh) {
 	animatetimer = animatethresh;

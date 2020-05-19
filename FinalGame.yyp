@@ -63,26 +63,10 @@
             }
         },
         {
-            "Key": "14bd5944-aebf-4f5d-bf05-184eb8b3f0ef",
-            "Value": {
-                "id": "04233989-84e0-4bff-8162-6d4465f29f51",
-                "resourcePath": "objects\\obj_menubutton_back\\obj_menubutton_back.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1abcda78-794d-4762-8156-d480c9798274",
             "Value": {
                 "id": "b9553987-4419-4f2a-80e3-e93528404622",
                 "resourcePath": "objects\\obj_title\\obj_title.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "1c5653bf-4f26-4b7d-b93f-f258c6287ac3",
-            "Value": {
-                "id": "9bb48c09-fe6e-4535-b4c4-aefc28aa3045",
-                "resourcePath": "objects\\obj_menubutton_controls\\obj_menubutton_controls.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -138,7 +122,7 @@
             "Key": "44369e91-caaf-4a1e-b775-5a13faa96640",
             "Value": {
                 "id": "b0603ef2-fa95-488d-bf58-ea0f039fe821",
-                "resourcePath": "objects\\obj_par_menubutton\\obj_par_menubutton.yy",
+                "resourcePath": "objects\\obj_menubutton\\obj_menubutton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -291,14 +275,6 @@
             "Value": {
                 "id": "358df7af-394a-4974-a530-ebbd449ba0e4",
                 "resourcePath": "objects\\obj_init\\obj_init.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "89ca912b-5e4a-4c25-8bf8-5bc0a82ea81e",
-            "Value": {
-                "id": "7f3e3cfb-41d0-4fb0-bff2-dad831a2f595",
-                "resourcePath": "objects\\obj_menubutton_start\\obj_menubutton_start.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -611,14 +587,6 @@
             "Value": {
                 "id": "1f33dac5-0560-4143-8328-41118b585481",
                 "resourcePath": "objects\\obj_gamestate\\obj_gamestate.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "fcdf3d89-dcc7-4acf-9b8c-e5f9d6d2c5da",
-            "Value": {
-                "id": "bcbc6cf5-630b-4e9b-afd2-f43e0f18573c",
-                "resourcePath": "objects\\obj_menubutton_retry\\obj_menubutton_retry.yy",
                 "resourceType": "GMObject"
             }
         }
